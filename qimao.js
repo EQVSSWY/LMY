@@ -2,6 +2,27 @@
 IOS: 七猫小说
 */
 
+
+
+
+
+
+//cookie配置文件中示例，多账号英文逗号隔开，复制格式删除注释符即可
+//#七猫小说
+//export MxsApp='[
+// {
+//    "ck": "Authorization替换我"   
+//  },
+// {
+//    "ck": "Authorization替换我"   
+//  }
+//]'
+
+
+
+
+
+
 const jsname = '七猫小说'
 const $ = Env(jsname)
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
@@ -14,28 +35,19 @@ let i;
 let userStatus = []
 let userIdx = 0
 let TokenUserArr = []
-//cookie配置文件中示例，多账号英文逗号隔开，复制格式删除注释符即可
-//#七猫小说
-//export MxsApp='[
-// {
-//    "ck": "Authorization替换我"   
-//  },
-// {
-//    "ck": "Authorization替换我"   
-//  }
-//]'
+
 let Mxscook = ($.isNode() ? process.env.MxsApp : $.getdata('MxsApp')) || '';
 let TokenUser = JSON.parse(Mxscook);
 
 
 //Type任务次数设置
-let TypeRun1=2;
-let TypeRun2=5;
-let TypeRun3=15;
-let TypeRun4=1;
-let TypeRun5=15;
+let TypeRun1=100;
+let TypeRun2=100;
+let TypeRun3=100;
+let TypeRun4=100;
+let TypeRun5=100;
 let TypeRun6=100;
-let TypeRun7=10;
+let TypeRun7=100;
 
 
 !(async () => {     
@@ -65,7 +77,7 @@ async function showmsg() {
 }
 
 async function checkEnv() {
-    console.log(`共找到${TokenUser.length}个用户`)
+    console.log(`开始进行大保剑`)
     return true
 }
 
@@ -121,7 +133,7 @@ async function MxsTask() {
 
 
 async function MxsTask1() {
-    console.log(`开始进行${TypeRun1}次 Type=1 任务`)  
+    console.log(`开始进行398大保健`)  
     for(let i=0; i<TypeRun1; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -145,7 +157,7 @@ async function MxsTask1() {
 }
 
 async function MxsTask2() {
-    console.log(`开始进行${TypeRun2}次 Type=2 任务`)  
+    console.log(`开始进行498大保健`)  
     for(let i=0; i<TypeRun2; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -165,7 +177,7 @@ async function MxsTask2() {
 }
 
 async function MxsTask3() {
-    console.log(`开始进行${TypeRun3}次 Type= 3任务`)  
+    console.log(`开始进行598大保健`)  
     for(let i=0; i<TypeRun3; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -185,7 +197,7 @@ async function MxsTask3() {
 }
 
 async function MxsTask4() {
-    console.log(`开始进行${TypeRun4}次 Type=4 任务`)  
+    console.log(`开始进行698大保健`)  
     for(let i=0; i<TypeRun4; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -205,7 +217,7 @@ async function MxsTask4() {
 }
 
 async function MxsTask5() {
-    console.log(`开始进行${TypeRun5}次 Type=5 任务`)  
+    console.log(`开始进行798大保健`)  
     for(let i=0; i<TypeRun5; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -225,7 +237,7 @@ async function MxsTask5() {
 }
 
 async function MxsTask6() {
-    console.log(`开始进行${TypeRun6}次 Type=6 任务`)  
+    console.log(`开始进行服务提升998大保健`)  
     for(let i=0; i<TypeRun6; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
@@ -245,7 +257,7 @@ async function MxsTask6() {
 }
 
 async function MxsTask7() {
-    console.log(`开始进行${TypeRun7}次 Type=7 任务`)  
+    console.log(`开始进行究极服务8888大保健`)  
     for(let i=0; i<TypeRun7; i++) {
     let caller = printCaller()
     let url = `https://api-ks.wtzw.com/api/v1/coin/add`;
